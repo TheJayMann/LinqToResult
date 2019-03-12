@@ -1,3 +1,5 @@
+[![Build status](https://dev.azure.com/themann/LinqToResult/_apis/build/status/LinqToResult-CI)](https://dev.azure.com/themann/LinqToResult/_build/latest?definitionId=-1)
+[![Nuget](https://img.shields.io/nuget/v/LinqToResult.svg)](https://www.nuget.org/packages/LinqToResult/)
 # LinqToResult - Railway Oriented Programming using LINQ
 
 This library attempts to use the ROP design by using LINQ.  In most functional
