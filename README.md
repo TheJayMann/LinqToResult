@@ -1,5 +1,5 @@
 [![Build status](https://dev.azure.com/themann/LinqToResult/_apis/build/status/LinqToResult-CI)](https://dev.azure.com/themann/LinqToResult/_build/latest?definitionId=-1)
-[![Release status](https://vsrm.dev.azure.com/themann/_apis/public/Release/badge/d3d5d22b-da2a-4356-82f5-afa1a1243750/1/1)](https://dev.azure.com/themann/LinqToResult/_release/latest?definitionId=-1)
+[![Release status](https://vsrm.dev.azure.com/themann/_apis/public/Release/badge/d3d5d22b-da2a-4356-82f5-afa1a1243750/1/1)](https://dev.azure.com/themann/LinqToResult/_release/?definitionId=-1)
 [![Nuget](https://img.shields.io/nuget/v/LinqToResult.svg)](https://www.nuget.org/packages/LinqToResult/)
 [![License](https://img.shields.io/github/license/TheJayMann/LinqToResult.svg)](https://github.com/TheJayMann/LinqToResult/blob/master/LICENSE.md)
 # LinqToResult - Railway Oriented Programming using LINQ
