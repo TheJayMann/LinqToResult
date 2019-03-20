@@ -2,10 +2,10 @@
 using System.Threading.Tasks;
 
 namespace LinqToResult {
-    public struct Result<TOk, TError> {
+    public readonly struct Result<TOk, TError> {
         public bool IsSuccess { get; }
-        private TOk _Ok;
-        private TError _Error;
+        private readonly TOk _Ok;
+        private readonly TError _Error;
         private Result(TOk ok) {
             IsSuccess = true;
             _Ok = ok;
@@ -40,7 +40,7 @@ namespace LinqToResult {
         public Result<TNewOk, TError> Select<TNewOk>(Func<TOk, TNewOk> selector) => IsSuccess ? Result<TNewOk, TError>.Ok(selector(_Ok)) : Result<TNewOk, TError>.Error(_Error);
         public Result<TOk, TNewError> SelectError<TNewError>(Func<TError, TNewError> selector) => IsSuccess ? Result<TOk, TNewError>.Ok(_Ok) : Result<TOk, TNewError>.Error(selector(_Error));
 
-        private struct Combiner<TNewOk, TResult> {
+        private readonly struct Combiner<TNewOk, TResult> {
             readonly TOk _Ok;
             readonly Func<TOk, TNewOk, TResult> _Combine;
             public Combiner(TOk ok, Func<TOk, TNewOk, TResult> combine) { _Ok = ok; _Combine = combine; }
@@ -68,7 +68,7 @@ namespace LinqToResult {
     public delegate Task<Result<TOut, TError>> AsyncResultSelector<in TIn, TOut, TError>(TIn @in);
 
     public static class ResultExtensions {
-        public static T Collapse<T>(this Result<T, T> result) => result.Either(a => a, a => a);
+        public static T Collapse<T>(this in Result<T, T> result) => result.Either(a => a, a => a);
 
         public static async Task<Result<TOut, TError>> Select<TIn, TOut, TError>(this Task<Result<TIn, TError>> source, Func<TIn, TOut> selector) =>
             (await source.ConfigureAwait(false)).Select(selector)

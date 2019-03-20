@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.438
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28714.193
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToResult", "LinqToResult\LinqToResult.csproj", "{B9C757CB-E4EA-44C1-8433-AF9193C953A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqToResult", "LinqToResult\LinqToResult.csproj", "{B9C757CB-E4EA-44C1-8433-AF9193C953A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBFE08F4-60D1-4684-89B3-5CD7F0296EFA}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Benchmark\Benchmark.csproj", "{313FA1BE-4F75-4812-8FA8-836C8FDA9B27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +24,10 @@ Global
 		{B9C757CB-E4EA-44C1-8433-AF9193C953A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9C757CB-E4EA-44C1-8433-AF9193C953A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9C757CB-E4EA-44C1-8433-AF9193C953A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313FA1BE-4F75-4812-8FA8-836C8FDA9B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313FA1BE-4F75-4812-8FA8-836C8FDA9B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313FA1BE-4F75-4812-8FA8-836C8FDA9B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313FA1BE-4F75-4812-8FA8-836C8FDA9B27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
