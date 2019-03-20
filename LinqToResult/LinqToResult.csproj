@@ -3,7 +3,21 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Description>Adds Railway Oriented Programming to C# by making use of LINQ syntax.</Description>
+    <RepositoryUrl>https://github.com/TheJayMann/LinqToResult</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Result;Railway Oriented Programming;ROP;Either</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/TheJayMann/LinqToResult</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
