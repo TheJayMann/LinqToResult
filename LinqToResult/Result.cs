@@ -14,12 +14,24 @@ namespace LinqToResult {
         public bool IsSuccess { get; }
         private readonly TOk _Ok;
         private readonly TError _Error;
-        private Result(TOk ok) {
+
+        
+        /// <summary>
+        /// Creates a new successful <see cref="Result{TOk, TError}"/>
+        /// </summary>
+        /// <param name="ok">The value representing success</param>
+        public Result(TOk ok) {
             IsSuccess = true;
             _Ok = ok;
             _Error = default;
         }
-        private Result(TError error) {
+        
+        
+        /// <summary>
+        /// Creats a new failed <see cref="Result{TOk, TError}"/>
+        /// </summary>
+        /// <param name="error">The value representing failure</param>
+        public Result(TError error) {
             IsSuccess = false;
             _Error = error;
             _Ok = default;
